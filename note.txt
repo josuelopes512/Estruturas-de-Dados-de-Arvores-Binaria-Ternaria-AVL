@@ -1,0 +1,19 @@
+http://www.desafiosdeti.com.br/estrutura-de-dados/arvore-binaria-de-busca-parte-2-remocao/#:~:text=Para%20se%20fazer%20a%20remo%C3%A7%C3%A3o,o%20valor%20que%20queremos%20remover.
+http://wiki.icmc.usp.br/images/5/53/ArvoresBinariasBusca_2.pdf
+https://www.youtube.com/watch?v=_0Yu9BSYXGY&list=PL8iN9FQ7_jt6H5m4Gm0H89sybzR9yaaka&index=76
+https://www.youtube.com/watch?v=wiIehgbjCQU
+https://www.youtube.com/watch?v=xPYHHn8DqhI
+
+
+else{
+            aux = e->esq;
+            while (aux->dir != NULL){
+              aux = aux->dir;
+            }
+            e->valor = aux->valor;
+            aux->valor = valor;
+            e->esq = removerNo(e->esq, valor);
+}
+
+
+
